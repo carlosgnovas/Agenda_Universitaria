@@ -1,0 +1,16 @@
+[package]
+name = "agenda_universitaria"
+version = "1.0.0"
+description = "Agenda universitaria multiplataforma"
+authors = ["Agenda Universitaria"]
+edition = "2021"
+
+[lib]
+name = "agenda_universitaria_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
